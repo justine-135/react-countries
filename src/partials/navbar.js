@@ -4,10 +4,10 @@ const NavBar = ({ lightMode, setLightMode }) => {
   };
 
   const modes = {
-    nav: `flex justify-center h-20 font-default shadow duration-100 ease-in ${
+    nav: `fixed flex justify-center h-20 font-default w-full shadow z-50 duration-100 ease-in ${
       lightMode === "light" ? "bg-white " : "bg-veryLightGray"
     }`,
-    h1: `text-18 font-extrabold ${
+    h1: `text-sm tablet:text-18 font-extrabold ${
       lightMode === "light" ? "text-[black]" : "text-[white]"
     }`,
     button: `flex items-center font-semibold ${
@@ -18,7 +18,7 @@ const NavBar = ({ lightMode, setLightMode }) => {
 
   return (
     <nav className={modes.nav}>
-      <section className="flex justify-between items-center w-[80%]">
+      <section className="flex justify-between items-center w-[90%] tablet:w-[80%] max-w-[1128px]">
         <header className={modes.h1}>Where in the world?</header>
         <button
           className={modes.button}
