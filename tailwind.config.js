@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontSize: {
       18: "1.125rem",
+      14: "0.875rem",
       base: "1rem",
       xl: "1.25rem",
       "2xl": "1.563rem",
@@ -18,6 +19,13 @@ module.exports = {
       display: ["Oswald"],
       body: ['"Open Sans"'],
     },
+    screens: {
+      tabletNav: "630px",
+      mobile: "375px",
+      tablet: "830px",
+      tablet2: "518px",
+      pc: "1100px",
+    },
     extend: {
       colors: {
         darkBlue: "hsl(209, 23%, 22%)",
@@ -28,11 +36,11 @@ module.exports = {
         darkWhite: "#FAFAFA",
         white: "hsl(0, 0%, 100%)",
       },
+      boxShadow: {
+        backBtnLight: "0 0 10px 0px #cbd5e1",
+        backBtnDark: "0 0 10px 0px #0f172a",
+      },
     },
   },
   plugins: [],
-  screens: {
-    mobile: "375px",
-    // => @media (min-width: 640px) { ... }
-  },
 };
