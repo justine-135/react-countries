@@ -26,7 +26,7 @@ const NoMatch = ({ lightMode }) => {
           Click{" "}
           <Link
             className="underline decoration-solid underline-offset-2 text-[blue]"
-            to="/"
+            to="/react-countries"
           >
             here
           </Link>{" "}

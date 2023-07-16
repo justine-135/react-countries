@@ -12,7 +12,7 @@ const Cards = ({ loading, country, lightMode }) => {
   };
 
   return (
-    <Link to={`/countries/${country.cca3}`}>
+    <Link to={`/react-countries/countries/${country.cca3}`}>
       <div className={mode.card}>
         <img
           className="w-full rounded-t-md h-[160px] object-cover"
