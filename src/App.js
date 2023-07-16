@@ -45,7 +45,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/react-countries/"
+            path="/"
             element={
               <Countries
                 lightMode={lightMode}
@@ -60,7 +60,7 @@ function App() {
           />
           <Route
             exact
-            path="/react-countries/countries/:cca3"
+            path="/countries/:cca3"
             element={<CardDetail lightMode={lightMode} />}
           />
           <Route path="*" element={<NoMatch lightMode={lightMode} />} />

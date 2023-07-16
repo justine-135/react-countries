@@ -49,7 +49,7 @@ const CardDetail = ({ lightMode }) => {
   return (
     <main className={mode.main}>
       <div className="tablet:w-[80%] w-[90%] max-w-[1128px]">
-        <Link to="/react-countries" className={mode.backButton}>
+        <Link to="/" className={mode.backButton}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
