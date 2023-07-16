@@ -41,6 +41,7 @@ function App() {
   };
   return (
     <div className={mode.app}>
+      asdasd
       <NavBar lightMode={lightMode} setLightMode={setLightMode} />
       <Router>
         <Routes>
