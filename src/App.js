@@ -3,7 +3,7 @@ import Countries from "./components/countries";
 import CardDetail from "./components/CardDetail";
 import NoMatch from "./partials/nomatch";
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
 
 function App() {
@@ -41,7 +41,6 @@ function App() {
   };
   return (
     <div className={mode.app}>
-      asdasd
       <NavBar lightMode={lightMode} setLightMode={setLightMode} />
       <Router>
         <Routes>
