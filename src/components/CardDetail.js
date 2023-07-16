@@ -7,7 +7,6 @@ const CardDetail = ({ lightMode }) => {
   const [error, setError] = useState(false);
   const [data, setData] = useState([]);
   const { cca3 } = useParams();
-  const [borders, setBorders] = useState(false);
   const url = `https://restcountries.com/v3.1/alpha/${cca3}`;
 
   useEffect(() => {
@@ -91,6 +90,7 @@ const CardDetail = ({ lightMode }) => {
               } else {
                 languages += language + " ";
               }
+              return language;
             });
             Object.values(country.tld).map((tld) => {
               j++;
@@ -99,6 +99,7 @@ const CardDetail = ({ lightMode }) => {
               } else {
                 tlds += tld + " ";
               }
+              return tld;
             });
 
             return (
